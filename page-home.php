@@ -8,6 +8,7 @@ get_header();
         <?php 
         $args = ['post_type' => ['movie', 'series'], 'posts_per_page' => 20];
         $query = new WP_Query($args);
+        
         while ($query->have_posts()): $query->the_post();
             $year = get_post_meta(get_the_ID(), 'release_year', true);
             $vote = get_post_meta(get_the_ID(), 'vote_average', true);
