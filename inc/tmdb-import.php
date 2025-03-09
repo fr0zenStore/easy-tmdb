@@ -1,3 +1,4 @@
+<?php
 function easy_tmdb_import($tmdb_id, $type = 'movie') {
     $api_key = 'TUO_API_KEY';
     $url = "https://api.themoviedb.org/3/$type/$tmdb_id?api_key=$api_key&language=it-IT";
@@ -26,6 +27,6 @@ function easy_tmdb_import($tmdb_id, $type = 'movie') {
             if ($image_id) set_post_thumbnail($post_id, $image_id);
         }
     }
-
     return $post_id;
 }
+?>
