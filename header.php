@@ -1,6 +1,11 @@
-
-<button id="theme-toggle" class="btn btn-outline-secondary">🌙</button>
-
-<?php if (get_theme_mod('easy_tmdb_logo')): ?>
-    <img src="<?php echo esc_url(get_theme_mod('easy_tmdb_logo')); ?>" alt="Logo" class="logo">
-<?php endif; ?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<header class="container py-3">
+    <button id="theme-toggle" class="btn btn-outline-secondary">🌙</button>
+</header>
