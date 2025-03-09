@@ -1,4 +1,4 @@
-<php? 
+<?php
 function easy_tmdb_customizer_settings($wp_customize) {
     $wp_customize->add_section('easy_tmdb_general', [
         'title' => 'Impostazioni Generali',
