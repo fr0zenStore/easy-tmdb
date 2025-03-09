@@ -3,7 +3,7 @@ Theme Name: Easy TMDB
 Theme URI: https://fr0zen.store/easy-tmdb
 Author: fr0zen
 Author URI: https://fr0zen.store
-Description: Tema WordPress veloce e leggero per recensioni di film e serie TV con importazione automatica da TMDb sviluppato per Thiago Barbosa.
+Description: Tema WordPress veloce e leggero per recensioni di film e serie TV con importazione automatica da TMDb creato per Thiago Barbosa.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -11,109 +11,5 @@ Text Domain: easy-tmdb
 Tags: bootstrap, responsive, movies, series, dark-mode, lightweight
 */
 
-/* ====== BASE STYLES ====== */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #212529;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* ====== HEADER ====== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
-
-.logo {
-    max-height: 50px;
-}
-
-/* ====== CARDS (FILM & SERIE TV) ====== */
-.card {
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-title {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.card-body p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* ====== DARK MODE ====== */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.dark-mode a {
-    color: #1e90ff;
-}
-
-.dark-mode .card {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.dark-mode .card-body p {
-    color: #bbbbbb;
-}
-
-/* ====== FOOTER ====== */
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #343a40;
-    color: #ffffff;
-    text-align: center;
-}
-
-/* ====== RESPONSIVE DESIGN ====== */
-
-/* Tablet (max 992px) */
-@media (max-width: 992px) {
-    .row-cols-md-5 {
-        --bs-gutter-x: 1rem;
-    }
-    .col {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
-}
-
-/* Smartphone (max 768px) */
-@media (max-width: 768px) {
-    .col {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-/* Smartphone piccolo (max 576px) */
-@media (max-width: 576px) {
-    .col {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+/* Importa il file di stile principale */
+@import url('assets/css/style.css');
