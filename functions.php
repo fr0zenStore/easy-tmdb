@@ -55,13 +55,7 @@ require_once get_template_directory() . '/inc/custom-post-types.php';  // Custom
 require_once get_template_directory() . '/inc/theme-options.php';     // Opzioni del Tema
 require_once get_template_directory() . '/inc/tmdb-import.php';       // Importazione TMDb
 require_once get_template_directory() . '/inc/filter-movies.php';     // Filtri Avanzati
-require_once get_template_directory() . '/inc/filter-widget.php';     // Widget del Filtro
-
-// Abilita i widget del filtro
-function register_easy_tmdb_filter_widget() {
-    register_widget('Easy_TMDB_Filter_Widget');
-}
-add_action('widgets_init', 'register_easy_tmdb_filter_widget');
+require_once get_template_directory() . '/inc/filter-widget.php';     // Widget del 
 
 // Shortcode per visualizzare il filtro sulla home
 function easy_tmdb_filter_shortcode() {
@@ -70,4 +64,3 @@ function easy_tmdb_filter_shortcode() {
     return ob_get_clean();
 }
 add_shortcode('easy_tmdb_filter', 'easy_tmdb_filter_shortcode');
-?>
