@@ -1,0 +1,163 @@
+/* ====== Easy TMDB Theme Styles ====== */
+
+/* ====== BASE STYLES ====== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== HEADER ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* ====== CARD STYLES (MOVIES & SERIES) ====== */
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ====== DARK MODE ====== */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #1e90ff;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode #theme-toggle {
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
+.dark-mode #theme-toggle:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.dark-mode .card-body p {
+    color: #bbbbbb;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ====== SIDEBAR ====== */
+.widget {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.dark-mode .widget {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Tablet (max 992px) */
+@media (max-width: 992px) {
+    .row-cols-md-5 {
+        --bs-gutter-x: 1rem;
+    }
+    .col {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* Smartphone (max 768px) */
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #theme-toggle {
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Smartphone piccolo (max 576px) */
+@media (max-width: 576px) {
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #theme-toggle {
+        width: 100%;
+    }
+}
