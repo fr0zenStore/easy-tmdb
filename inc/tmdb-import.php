@@ -1,6 +1,6 @@
 <?php
 function easy_tmdb_import($tmdb_id, $type = 'movie') {
-    $api_key = 'TUO_API_KEY';
+    $api_key = '1865f43a0549ca50d341dd9ab8b29f49';
     $url = "https://api.themoviedb.org/3/$type/$tmdb_id?api_key=$api_key&language=it-IT";
 
     $response = wp_remote_get($url);
