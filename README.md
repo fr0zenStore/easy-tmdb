@@ -25,8 +25,8 @@ Supporta l'importazione automatica di film e serie TV tramite l'API di **TMDb** 
 ## 🛠️ Installazione
 1. **Clona il Repository**
    ```bash
-   git clone https://github.com/fr0zen/essy-tmdb.git
-   cd moviespeed
+   git clone https://github.com/fr0zenStore/easy-tmdb.git
+   cd easy-tmdb
    ```
 2. **Installa le Dipendenze**
    ```bash
@@ -50,7 +50,7 @@ Il tema richiede una chiave API di TMDb per importare film e serie TV.
 ### **Come Ottenere la Chiave API**
 1. Registrati su [TMDb](https://www.themoviedb.org/).  
 2. Vai su **Impostazioni > API** e genera una chiave.  
-3. Inserisci la chiave in **Impostazioni > EssyTmdb**.  
+3. Inserisci la chiave in **Impostazioni > Easy TMDB**.  
 
 ---
 
@@ -115,11 +115,6 @@ Distribuito sotto licenza **GPL-2.0-or-later**.
 ## ✨ Autore
 Creato da **fr0zen**  
 [GitHub](https://github.com/fr0zenStore)  
-
----
-
-## 🌐 Demo Online
-Visualizza la demo del tema su [MovieSpeed Demo](https://moviespeed.example.com)  
 
 ---
 
